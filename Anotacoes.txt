@@ -11,4 +11,50 @@ INLINE -> <p style=”propriedade: valor;”>...</p>
 * Se usar mais de um ele vai ler de modo cascata:
  - Lê o externo, e setta os componentes.
  - Lê o interno, e altera o que aparecer e etc.
- 
+
+- SINTAXE:
+
+body {
+    background-color: #00ff00;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+ - 3 SELETORES:
+
+Tag:
+seletor{
+    ...
+}
+
+ID:
+#seletor{
+    ...
+}
+
+Classe:
+.seletor{
+    ...
+}
+
+- DESCENDENTES & COMBINAÇÕES 
+
+Tudo que tiver abaixo de pai, até filho (o que tem dentro recebe também.):
+seletor_pai seletor_filho{
+
+}
+
+Mesmo elemento:
+elemento#id.classe{
+    ...
+}
+
+Elemento filho (somente esse filho, o que tiver dentro não vai receber.):
+seletor_pai > seletor_filho{
+    ...
+}
+
+Múltiplos elementos:
+seletor1, seletor2, seletor3{
+    ...
+}
