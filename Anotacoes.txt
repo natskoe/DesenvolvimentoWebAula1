@@ -161,4 +161,46 @@ Overflow - Diz o que fazer quando um elemento for maior do que o tamanho definid
  - SCROLL: Oculta, mas permite ver o oculto scrollando (automaticamente, tanto vertical quanto horizontal).
  - AUTO: Se ultrapassar vertical, cria scroll vertical e afins.
 
- 
+Widht - Define a largura de um elemento, se não tiver a widht declarada por padrão será 100%
+do container pai (desde que seja um bloco).
+    elemento{
+        widht: 560px;
+    }
+
+Height - Define a altura de um elemento. Se não tiver a height declarada, será igual
+a altura do conteúdo interno (seja bloco ou linha).
+    elemento{
+        heigh: 560px;
+    }
+    - Geralmente não se usa assim.
+
+Widht
+---------------
+|
+|Height
+|
+
+Padding - Propriedade de margem. Usa quando quer especificar qual a distância dos elementos da borda
+interna.
+    elemento {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        /* shorthand */
+        padding: 10px 20px 30px 40px;
+    }
+
+Border - Distância entre padding | margin.
+
+    elemento {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #FF0000;
+        /* shorthand */
+        border: solid 2px #FF0000;
+    }
+
+Margin - Distância para fora. 
+
+
