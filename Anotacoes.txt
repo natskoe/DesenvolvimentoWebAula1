@@ -1,0 +1,14 @@
+As folhas de estilo servem para “estilizar” o nosso conteúdo HTML. O CSS
+permite alterar cores, planos de fundo, tipografias, alturas, larguras, etc.,
+Também permite gerar animações e transições.
+
+Há três métodos para vincular estilos CSS a um documento HTML:
+EXTERNO -> <link />
+INTERNO -> <style> … </style>
+INLINE -> <p style=”propriedade: valor;”>...</p>
+
+* Geralmente usar o método externo. 
+* Se usar mais de um ele vai ler de modo cascata:
+ - Lê o externo, e setta os componentes.
+ - Lê o interno, e altera o que aparecer e etc.
+ 
