@@ -1,3 +1,5 @@
+SLIDES 04 E 05.
+
 As folhas de estilo servem para “estilizar” o nosso conteúdo HTML. O CSS
 permite alterar cores, planos de fundo, tipografias, alturas, larguras, etc.,
 Também permite gerar animações e transições.
@@ -58,3 +60,105 @@ Múltiplos elementos:
 seletor1, seletor2, seletor3{
     ...
 }
+
+- PROPRIEDADES:
+
+-> Tipografia;
+-> Fundo;
+-> Tamanho;
+-> Posicionamento;
+-> Visualização;
+-> Comportamento;
+-> Interface...
+
+Exemplos:
+    - font-size: 13px;
+    - Recebe sempre um valor númerico + unidade de medida.
+    - https://www.maujor.com/tutorial/unidades-de-medidas-css.php
+    - https://www.w3.org/Style/Examples/007/units.pt_BR.html
+-----------------------------------------------------------------
+    - font-family: sans-serif;
+    - Permite escolher a família tipográfica que queremos usar.
+    - https://www.w3schools.com/cssref/css_websafe_fonts.php
+    - https://fonts.google.com/
+    - https://www.fontsquirrel.com/tools/webfont-generator
+-----------------------------------------------------------------
+    - font-weight: normal;
+    - Define a espessura da fonte. Geralmente padrão = Bold.
+    - Pode-se usar valor numérico: 600, por exemplo.
+-----------------------------------------------------------------
+    - font-style: normal;
+    - Define o estilo da fonte.
+    - O valor padrão as vezes é italic: italic.
+-----------------------------------------------------------------
+    - text-align: left;
+    - Define o alinhamento do texto.
+    - O valor padrão para todas (exceção de center) é left.
+    - Outros: center; right; justify...
+-----------------------------------------------------------------
+    - text-decoration: none;
+    - Permite escolher decorações para o texto. 
+    - O valor padrão para algumas etiquetas é underline. Ex: <a href=””></a>.
+    - Outros: underline; overline; line-through...
+-----------------------------------------------------------------
+    - line-height: 21px;
+    - Permite definir o espaçamento entre duas linhas.
+    - Recebe um valor número mais unidade de medida.
+    - Relação direta com a propriedade font-size.
+-----------------------------------------------------------------
+    - resize: none;
+    - Define se um elemento pode ser redimencionado ou não.
+    - Comumente usado na tag <textarea>.
+    - Outros: both, horizontal, vertical.
+-----------------------------------------------------------------
+    - seletor:pseudo{
+        propriedade: valor;
+    }
+    - Permitem controlar eventos especiais de um elemento.
+    - Costumam ser aplicados sobre um seletor existente.
+
+    HOVER:
+    - a {
+        text-decoration: none;
+    }
+    - a:hover{
+        text-decoration: underline;
+    }
+    - Quando o cursor está em cima a definição é visível.
+
+    ACTIVE:
+    - a{
+        color: ##ff0000;
+    }
+    - a: active{
+        color: #000000;
+    }
+    - Quando algo está ativo a definição é visível.
+
+    FOCUS:
+    - input{
+        background-color: ##ff0000;
+    }
+    - input: focus{
+        background-color: #000000;
+    }
+    - O que for definido com esse seletor só será visível com o cursor dentro do campo.
+-----------------------------------------------------------------
+
+BLOCOS:
+
+Header; Content; Nav; Footer
+
+Display - Diz pro navegador como ele deve interpretar o bloco específico.
+ - INLINE: Comportamento de LINHA, não recebe algumas propriedades do modelo de caixa.
+ - BLOCK: Comportamento de BLOCO, recebe "facilmente" as propriedade do modelo de caixa.
+ - INLINE-BLOCK: Comportamento de SEMIBLOCO, recebe "facilmente" as propriedade do modelo de caixa.
+ - NONE: Oculta visualmente um elemento, sem retirá-lo da estrutura HTML.
+
+Overflow - Diz o que fazer quando um elemento for maior do que o tamanho definido.
+ - VISIBLE: Vai ignorar o limite e exibir.
+ - HIDDEN: O que não couber, é oculto.
+ - SCROLL: Oculta, mas permite ver o oculto scrollando (automaticamente, tanto vertical quanto horizontal).
+ - AUTO: Se ultrapassar vertical, cria scroll vertical e afins.
+
+ 
